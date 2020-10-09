@@ -1,0 +1,199 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:RFM95W-915S2 U1
+U 1 1 5F7EE283
+P 5900 3950
+F 0 "U1" H 5900 3950 50  0000 C CNN
+F 1 "RFM95W-915S2" H 6350 3400 50  0000 C CNN
+F 2 "" H 2600 5600 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 2600 5600 50  0001 C CNN
+	1    5900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5F7F506A
+P 6800 2550
+F 0 "J2" H 6900 2525 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6900 2434 50  0000 L CNN
+F 2 "" H 6800 2550 50  0001 C CNN
+F 3 " ~" H 6800 2550 50  0001 C CNN
+	1    6800 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4750 4650 4750
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5F80DD51
+P 4650 4750
+F 0 "#PWR01" H 4650 4600 50  0001 C CNN
+F 1 "+3.3V" V 4650 4850 50  0000 L CNN
+F 2 "" H 4650 4750 50  0001 C CNN
+F 3 "" H 4650 4750 50  0001 C CNN
+	1    4650 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5F80ED4C
+P 5900 3200
+F 0 "#PWR03" H 5900 3050 50  0001 C CNN
+F 1 "+3.3V" H 5915 3373 50  0000 C CNN
+F 2 "" H 5900 3200 50  0001 C CNN
+F 3 "" H 5900 3200 50  0001 C CNN
+	1    5900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3200 5900 3450
+Wire Wire Line
+	6400 3650 6800 3650
+Wire Wire Line
+	6800 3650 6800 2750
+Wire Wire Line
+	4350 4850 4650 4850
+$Comp
+L power:GND #PWR04
+U 1 1 5F816B17
+P 5900 4700
+F 0 "#PWR04" H 5900 4450 50  0001 C CNN
+F 1 "GND" H 5905 4527 50  0000 C CNN
+F 2 "" H 5900 4700 50  0001 C CNN
+F 3 "" H 5900 4700 50  0001 C CNN
+	1    5900 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4550 6000 4650
+Wire Wire Line
+	6000 4650 5900 4650
+Wire Wire Line
+	5900 4650 5900 4700
+Wire Wire Line
+	5900 4550 5900 4650
+Connection ~ 5900 4650
+Wire Wire Line
+	5800 4550 5800 4650
+Wire Wire Line
+	5800 4650 5900 4650
+$Comp
+L power:GND #PWR02
+U 1 1 5F81A6ED
+P 4650 4850
+F 0 "#PWR02" H 4650 4600 50  0001 C CNN
+F 1 "GND" V 4655 4722 50  0000 R CNN
+F 2 "" H 4650 4850 50  0001 C CNN
+F 3 "" H 4650 4850 50  0001 C CNN
+	1    4650 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x18_Male J1
+U 1 1 5F7F0BAA
+P 4150 3950
+F 0 "J1" H 4258 4931 50  0000 C CNN
+F 1 "Conn_01x18_Male" H 4150 2900 50  0000 C CNN
+F 2 "" H 4150 3950 50  0001 C CNN
+F 3 "~" H 4150 3950 50  0001 C CNN
+	1    4150 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4550 4650 4550
+Wire Wire Line
+	4350 4650 4650 4650
+Wire Wire Line
+	4350 4450 4650 4450
+Text Label 4650 4650 0    50   ~ 0
+SCLK
+Text Label 4650 4550 0    50   ~ 0
+MOSI
+Text Label 4650 4450 0    50   ~ 0
+MISO
+Wire Wire Line
+	5400 3850 5300 3850
+Wire Wire Line
+	5400 3750 5300 3750
+Wire Wire Line
+	5400 3650 5300 3650
+Text Label 5300 3750 2    50   ~ 0
+MOSI
+Text Label 5300 3650 2    50   ~ 0
+SCLK
+Text Label 5300 3850 2    50   ~ 0
+MISO
+NoConn ~ 4350 3150
+NoConn ~ 4350 3250
+NoConn ~ 4350 3350
+NoConn ~ 4350 3450
+NoConn ~ 4350 3550
+NoConn ~ 4350 3650
+NoConn ~ 4350 3750
+NoConn ~ 4350 3850
+NoConn ~ 4350 3950
+NoConn ~ 4350 4050
+NoConn ~ 4350 4150
+NoConn ~ 4350 4250
+NoConn ~ 4350 4350
+Wire Wire Line
+	7500 3350 7350 3350
+Text Label 7350 3350 2    50   ~ 0
+RST
+Wire Wire Line
+	5400 4150 5300 4150
+Text Label 5300 4150 2    50   ~ 0
+RST
+$Comp
+L Connector:Conn_01x18_Male J3
+U 1 1 5F7F2594
+P 7700 4050
+F 0 "J3" H 7672 3932 50  0000 R CNN
+F 1 "Conn_01x18_Male" H 8000 5000 50  0000 R CNN
+F 2 "" H 7700 4050 50  0001 C CNN
+F 3 "~" H 7700 4050 50  0001 C CNN
+	1    7700 4050
+	-1   0    0    1   
+$EndComp
+NoConn ~ 7500 3150
+NoConn ~ 7500 3450
+NoConn ~ 7500 3550
+NoConn ~ 7500 3650
+NoConn ~ 7500 3750
+NoConn ~ 7500 3850
+NoConn ~ 7500 3950
+NoConn ~ 7500 4050
+NoConn ~ 7500 4350
+NoConn ~ 7500 4450
+NoConn ~ 7500 4550
+NoConn ~ 7500 4650
+NoConn ~ 7500 4750
+NoConn ~ 7500 4850
+NoConn ~ 7500 3250
+Wire Wire Line
+	7500 4150 6900 4150
+Wire Wire Line
+	6900 4150 6900 4050
+Wire Wire Line
+	6900 4050 6400 4050
+Wire Wire Line
+	6900 4250 6900 4350
+Wire Wire Line
+	6900 4350 6400 4350
+Wire Wire Line
+	6900 4250 7500 4250
+$EndSCHEMATC
