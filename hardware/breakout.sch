@@ -149,9 +149,7 @@ Wire Wire Line
 	7500 3350 7350 3350
 Text Label 7350 3350 2    50   ~ 0
 RST
-Wire Wire Line
-	5400 4150 5300 4150
-Text Label 5300 4150 2    50   ~ 0
+Text Label 5000 4150 2    50   ~ 0
 RST
 $Comp
 L Connector:Conn_01x18_Male J3
@@ -277,5 +275,36 @@ F 2 "" H 5200 3350 50  0001 C CNN
 F 3 "" H 5200 3350 50  0001 C CNN
 	1    5200 3350
 	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 4150 5200 4150
+Wire Wire Line
+	5200 4150 5200 4250
+Connection ~ 5200 4150
+Wire Wire Line
+	5200 4150 5400 4150
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F866186
+P 5200 4450
+F 0 "SW1" V 5246 4402 50  0000 R CNN
+F 1 "SW_Push" V 5155 4402 50  0000 R CNN
+F 2 "KiCad/kicad-footprints/Button_Switch_SMD.pretty:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile" H 5200 4650 50  0001 C CNN
+F 3 "~" H 5200 4650 50  0001 C CNN
+	1    5200 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 4650 5200 4750
+$Comp
+L power:GND #PWR0104
+U 1 1 5F867EB7
+P 5200 4750
+F 0 "#PWR0104" H 5200 4500 50  0001 C CNN
+F 1 "GND" H 5205 4577 50  0000 C CNN
+F 2 "" H 5200 4750 50  0001 C CNN
+F 3 "" H 5200 4750 50  0001 C CNN
+	1    5200 4750
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
