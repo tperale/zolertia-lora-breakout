@@ -1,5 +1,7 @@
 # LoRa Breakout board for the Zolertia RE-Mote Rev-B
 
+![preview](images/breakout.png)
+
 ## Schematics
 
 ![schematics](images/schematics.png)
