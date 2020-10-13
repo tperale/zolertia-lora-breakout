@@ -60,7 +60,7 @@ F 3 "" H 5900 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 3200 5900 3450
+	5900 3200 5900 3350
 Wire Wire Line
 	4350 4850 4650 4850
 $Comp
@@ -248,5 +248,34 @@ F 2 "KiCad/kicad-footprints/Jumper.pretty:SolderJumper-3_P1.3mm_Open_RoundedPad1
 F 3 "~" H 6550 2800 50  0001 C CNN
 	1    6550 2800
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3350 5600 3350
+Connection ~ 5900 3350
+Wire Wire Line
+	5900 3350 5900 3450
+$Comp
+L Device:C_Small C1
+U 1 1 5F8492C2
+P 5500 3350
+F 0 "C1" V 5729 3350 50  0000 C CNN
+F 1 "C_Small" V 5638 3350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5500 3350 50  0001 C CNN
+F 3 "~" H 5500 3350 50  0001 C CNN
+	1    5500 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 3350 5200 3350
+$Comp
+L power:GND #PWR0103
+U 1 1 5F84AA53
+P 5200 3350
+F 0 "#PWR0103" H 5200 3100 50  0001 C CNN
+F 1 "GND" V 5205 3222 50  0000 R CNN
+F 2 "" H 5200 3350 50  0001 C CNN
+F 3 "" H 5200 3350 50  0001 C CNN
+	1    5200 3350
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
