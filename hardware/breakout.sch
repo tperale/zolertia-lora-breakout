@@ -148,8 +148,8 @@ NoConn ~ 4350 4350
 Wire Wire Line
 	7500 3350 7350 3350
 Text Label 7350 3350 2    50   ~ 0
-RST
-Text Label 5000 4150 2    50   ~ 0
+RST_GPIO
+Text Label 5300 4150 2    50   ~ 0
 RST
 $Comp
 L Connector:Conn_01x18_Male J3
@@ -257,7 +257,7 @@ L Device:C_Small C1
 U 1 1 5F8492C2
 P 5500 3350
 F 0 "C1" V 5729 3350 50  0000 C CNN
-F 1 "C_Small" V 5638 3350 50  0000 C CNN
+F 1 "10uF" V 5638 3350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5500 3350 50  0001 C CNN
 F 3 "~" H 5500 3350 50  0001 C CNN
 	1    5500 3350
@@ -276,35 +276,113 @@ F 3 "" H 5200 3350 50  0001 C CNN
 	1    5200 3350
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5000 4150 5200 4150
-Wire Wire Line
-	5200 4150 5200 4250
-Connection ~ 5200 4150
-Wire Wire Line
-	5200 4150 5400 4150
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5F866186
-P 5200 4450
-F 0 "SW1" V 5246 4402 50  0000 R CNN
-F 1 "SW_Push" V 5155 4402 50  0000 R CNN
-F 2 "KiCad/kicad-footprints/Button_Switch_SMD.pretty:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile" H 5200 4650 50  0001 C CNN
-F 3 "~" H 5200 4650 50  0001 C CNN
-	1    5200 4450
+P 2300 4300
+F 0 "SW1" V 2250 4250 50  0000 R CNN
+F 1 "SW_Push" V 2150 4250 50  0000 R CNN
+F 2 "KiCad/kicad-footprints/Button_Switch_SMD.pretty:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile" H 2300 4500 50  0001 C CNN
+F 3 "~" H 2300 4500 50  0001 C CNN
+	1    2300 4300
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5200 4650 5200 4750
 $Comp
 L power:GND #PWR0104
 U 1 1 5F867EB7
-P 5200 4750
-F 0 "#PWR0104" H 5200 4500 50  0001 C CNN
-F 1 "GND" H 5205 4577 50  0000 C CNN
-F 2 "" H 5200 4750 50  0001 C CNN
-F 3 "" H 5200 4750 50  0001 C CNN
-	1    5200 4750
+P 2300 4800
+F 0 "#PWR0104" H 2300 4550 50  0001 C CNN
+F 1 "GND" H 2305 4627 50  0000 C CNN
+F 2 "" H 2300 4800 50  0001 C CNN
+F 3 "" H 2300 4800 50  0001 C CNN
+	1    2300 4800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2000 4000 2000 4200
+$Comp
+L Device:C_Small C2
+U 1 1 5F874ED2
+P 2000 4300
+F 0 "C2" H 1950 4400 50  0000 C CNN
+F 1 "1uF" H 1900 4500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2000 4300 50  0001 C CNN
+F 3 "~" H 2000 4300 50  0001 C CNN
+	1    2000 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 4400 2000 4650
+Wire Wire Line
+	2000 4650 2300 4650
+Wire Wire Line
+	5300 4150 5400 4150
+Wire Wire Line
+	2300 4500 2300 4650
+Connection ~ 2300 4650
+Wire Wire Line
+	2300 4650 2300 4800
+Wire Wire Line
+	2300 4100 2300 4000
+Wire Wire Line
+	2300 4000 2550 4000
+$Comp
+L Device:R_Small R1
+U 1 1 5F8A20C0
+P 2150 4000
+F 0 "R1" V 1954 4000 50  0000 C CNN
+F 1 "220R" V 2045 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 2150 4000 50  0001 C CNN
+F 3 "~" H 2150 4000 50  0001 C CNN
+	1    2150 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 4000 2300 4000
+Connection ~ 2300 4000
+Wire Wire Line
+	2050 4000 2000 4000
+Connection ~ 2000 4000
+Wire Wire Line
+	1700 4000 2000 4000
+Text Label 2550 4000 0    50   ~ 0
+RST_GPIO
+$Comp
+L Device:R_Small R2
+U 1 1 5F8A648B
+P 2300 3650
+F 0 "R2" H 2241 3604 50  0000 R CNN
+F 1 "10KR" H 2241 3695 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 2300 3650 50  0001 C CNN
+F 3 "~" H 2300 3650 50  0001 C CNN
+	1    2300 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 4000 2300 3750
+Wire Wire Line
+	2300 3550 2300 3400
+$Comp
+L power:+3.3V #PWR05
+U 1 1 5F8ACC15
+P 2300 3400
+F 0 "#PWR05" H 2300 3250 50  0001 C CNN
+F 1 "+3.3V" V 2300 3500 50  0000 L CNN
+F 2 "" H 2300 3400 50  0001 C CNN
+F 3 "" H 2300 3400 50  0001 C CNN
+	1    2300 3400
+	1    0    0    -1  
+$EndComp
+Text Label 1700 4000 2    50   ~ 0
+RST
+Wire Notes Line
+	1450 5050 1450 3000
+Wire Notes Line
+	1450 3000 3000 3000
+Wire Notes Line
+	3000 3000 3000 5050
+Wire Notes Line
+	3000 5050 1450 5050
+Text Notes 1450 3000 0    50   ~ 0
+Reset Push Button
 $EndSCHEMATC
