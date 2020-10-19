@@ -36,17 +36,17 @@ F 3 " ~" H 6150 2800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4350 4750 4650 4750
+	7500 4650 7200 4650
 $Comp
 L power:+3.3V #PWR01
 U 1 1 5F80DD51
-P 4650 4750
-F 0 "#PWR01" H 4650 4600 50  0001 C CNN
-F 1 "+3.3V" V 4650 4850 50  0000 L CNN
-F 2 "" H 4650 4750 50  0001 C CNN
-F 3 "" H 4650 4750 50  0001 C CNN
-	1    4650 4750
-	0    1    1    0   
+P 7200 4650
+F 0 "#PWR01" H 7200 4500 50  0001 C CNN
+F 1 "+3.3V" V 7200 4750 50  0000 L CNN
+F 2 "" H 7200 4650 50  0001 C CNN
+F 3 "" H 7200 4650 50  0001 C CNN
+	1    7200 4650
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR03
@@ -133,7 +133,7 @@ Text Label 5300 3650 2    50   ~ 0
 SCLK
 Text Label 5300 3850 2    50   ~ 0
 MISO
-NoConn ~ 4350 3150
+NoConn ~ 7500 3650
 NoConn ~ 4350 3250
 NoConn ~ 4350 3350
 NoConn ~ 4350 3450
@@ -146,8 +146,8 @@ NoConn ~ 4350 4150
 NoConn ~ 4350 4250
 NoConn ~ 4350 4350
 Wire Wire Line
-	7500 3350 7350 3350
-Text Label 7350 3350 2    50   ~ 0
+	4350 3150 4500 3150
+Text Label 4500 3150 0    50   ~ 0
 RST_GPIO
 Text Label 5300 4150 2    50   ~ 0
 RST
@@ -165,7 +165,7 @@ $EndComp
 NoConn ~ 7500 3150
 NoConn ~ 7500 3450
 NoConn ~ 7500 3550
-NoConn ~ 7500 3650
+NoConn ~ 7500 3350
 NoConn ~ 7500 3750
 NoConn ~ 7500 3850
 NoConn ~ 7500 3950
@@ -173,7 +173,7 @@ NoConn ~ 7500 4050
 NoConn ~ 7500 4350
 NoConn ~ 7500 4450
 NoConn ~ 7500 4550
-NoConn ~ 7500 4650
+NoConn ~ 4350 4750
 NoConn ~ 7500 4750
 NoConn ~ 7500 4850
 NoConn ~ 7500 3250
