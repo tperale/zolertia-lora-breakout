@@ -30,7 +30,7 @@ U 1 1 5F7F506A
 P 6150 2800
 F 0 "J2" H 6250 2775 50  0000 L CNN
 F 1 "Conn_Coaxial" H 5600 2500 50  0000 L CNN
-F 2 "KiCad/kicad-footprints/Connector_Coaxial.pretty:SMA_Amphenol_132289_EdgeMount" H 6150 2800 50  0001 C CNN
+F 2 "KiCad/kicad-footprints/Connector_Coaxial.pretty:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" H 6150 2800 50  0001 C CNN
 F 3 " ~" H 6150 2800 50  0001 C CNN
 	1    6150 2800
 	-1   0    0    1   
